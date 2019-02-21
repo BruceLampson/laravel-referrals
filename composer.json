@@ -1,5 +1,5 @@
 {
-    "name": "pdazcom/laravel-referrals",
+    "name": "brucelampson/laravel-simple-referrals",
     "description": "A referrals system for a laravel projects.",
     "homepage": "http://github.com/pdazcom/laravel-referrals",
     "type": "library",
