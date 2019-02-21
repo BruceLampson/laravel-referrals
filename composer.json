@@ -1,7 +1,7 @@
 {
     "name": "brucelampson/laravel-simple-referrals",
     "description": "A referrals system for a laravel projects.",
-    "homepage": "http://github.com/pdazcom/laravel-referrals",
+    "homepage": "https://github.com/BruceLampson/laravel-simple-referrals",
     "type": "library",
     "version": "0.2.3",
     "require": {
@@ -18,8 +18,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Konstantin A.",
-            "email": "kostya.dn@gmail.com"
+            "name": "Bruce L.",
+            "email": "brucelampson@gmail.com"
         }
     ],
     "autoload": {
