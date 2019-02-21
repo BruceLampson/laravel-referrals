@@ -22,7 +22,6 @@ class StoreReferralCode {
             }
             \Log::warn('Referral Ref code not found where request.ref equals '.$request->has('ref'));
         }
-
         return $next($request);
     }
 }
