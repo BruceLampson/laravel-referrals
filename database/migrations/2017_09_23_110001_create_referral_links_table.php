@@ -19,6 +19,7 @@ class CreateReferralLinksTable extends Migration
             $table->integer('referral_program_id')->unsigned();
             $table->string('code', 36)->index();
             $table->unique(['referral_program_id', 'user_id']);
+            $table->integer('clicks')->unsigned();
             $table->timestamps();
 
             $table->foreign('referral_program_id')->references('id')->on('referral_programs')->onDelete('cascade');

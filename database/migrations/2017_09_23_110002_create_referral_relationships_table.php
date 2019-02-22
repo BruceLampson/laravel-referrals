@@ -16,6 +16,7 @@ class CreateReferralRelationshipsTable extends Migration
         Schema::create('referral_relationships', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('referral_link_id')->unsigned();
+            $table->integer('subscription_id')->nullable()->unsigned();
             $table->integer('user_id')->unsigned();
             $table->timestamps();
 

@@ -40,7 +40,6 @@ class ReferralsServiceProvider extends EventServiceProvider
             "{$migrationsPath}00_create_referral_programs_table.php" => database_path('migrations/' . date("Y_m_d_Hi") . "00_create_referral_programs_table.php"),
             "{$migrationsPath}01_create_referral_links_table.php" => database_path('migrations/' . date("Y_m_d_Hi") . "01_create_referral_links_table.php"),
             "{$migrationsPath}02_create_referral_relationships_table.php" => database_path('migrations/' . date("Y_m_d_Hi") . "02_create_referral_relationships_table.php"),
-            "{$migrationsPath}03_add_allowed_ref_program_to_users.php" => database_path('migrations/' . date("Y_m_d_Hi") . "03_add_allowed_ref_program_to_users.php"),
         ], 'migrations');
     }
 }

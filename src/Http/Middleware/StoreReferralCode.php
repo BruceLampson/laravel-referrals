@@ -20,7 +20,7 @@ class StoreReferralCode {
                 $program = $referral->program()->first();
                 return redirect($request->url())->cookie('ref', $referral->id, $program->lifetime_minutes);
             }
-            \Log::warn('Referral Ref code not found where request.ref equals '.$request->has('ref'));
+            \Log::warn('Referral Ref code not found where request.ref equals '.$request->get('ref'));
         }
         return $next($request);
     }
