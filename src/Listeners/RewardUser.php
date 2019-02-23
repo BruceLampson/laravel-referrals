@@ -2,6 +2,7 @@
 
 namespace Pdazcom\Referrals\Listeners;
 
+use Pdazcom\Referrals\Models\ReferralRelationship;
 use Pdazcom\Referrals\Events\ReferralCase;
 use Pdazcom\Referrals\Models\ReferralProgram;
 
@@ -35,7 +36,12 @@ class RewardUser {
                 continue;
             }
 
-            (new $rewardClass($referralProgram, $recruitUser, $referralUser))->reward($event->rewardObject);
+            $referralEntry = ReferralRelationship::where([
+                'referral_link_id' => $referralLink->id,
+                'user_id' => $referralUser->id,
+            ])->first();
+
+            (new $rewardClass($referralEntry, $recruitUser, $referralUser))->reward($event->rewardObject);
         }
     }
 
